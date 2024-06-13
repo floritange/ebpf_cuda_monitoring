@@ -1,0 +1,97 @@
+python-319667  [003] d... 59284.629544: bpf_trace_printk: cudaStreamIsCapturing entered.
+python-319667  [003] d... 59284.629559: bpf_trace_printk: cudaMallocEntry timeStart:59285053019641. devPtr:000000000da8ab4e, size:2097152
+python-319667  [003] d... 59284.629560: bpf_trace_printk: cudaMallocEntry timeStart:59285053019641. devPtr value:0
+python-319667  [003] d... 59284.629826: bpf_trace_printk: cudaMallocExited. devPtr:0000000000000000, size:2130469608, value:0
+python-319667  [003] d... 59284.629894: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:00000000781e492b, src_address:00000000a0baf499, bytes_alloc:200000
+python-319667  [003] d... 59284.629963: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [003] d... 59284.630123: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:00000000f059bf5f, src_address:000000003a38d8e0, bytes_alloc:20
+python-319667  [003] d... 59284.630139: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [003] d... 59284.630233: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:000000008f7fbd11, src_address:00000000255dda8f, bytes_alloc:40
+python-319667  [003] d... 59284.630244: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [003] d... 59284.630316: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:0000000069dd8840, src_address:000000001d566b16, bytes_alloc:8
+python-319667  [003] d... 59284.630326: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [003] d... 59284.630676: bpf_trace_printk: cudaLaunchKernelEntry. func: 4800000088ec8148.
+python-319667  [003] d... 59284.630679: bpf_trace_printk: cudaLaunchKernelEntry. gridDim: (0, 0, 0).
+python-319667  [003] d... 59284.630680: bpf_trace_printk: cudaLaunchKernelEntry. blockDim: (0, 0, 0).
+python-319667  [003] d... 59284.630681: bpf_trace_printk: cudaLaunchKernelEntry. sharedMem: 1, stream: ffffb693013cfd50.
+python-319667  [003] d... 59284.630697: bpf_trace_printk: cudaLaunchKernelExited. func: 1.
+python-319667  [003] d... 59284.630698: bpf_trace_printk: cudaLaunchKernelExited. gridDim: (0, 0, 0).
+python-319667  [003] d... 59284.630699: bpf_trace_printk: cudaLaunchKernelExited. blockDim: (0, 0, 0).
+python-319667  [003] d... 59284.630700: bpf_trace_printk: cudaLaunchKernelExited. sharedMem: 96440320, stream: ffffb693013cfd78.
+python-319667  [003] d... 59284.630709: bpf_trace_printk: cudaGetLastError Exited. Return code: 0
+
+python-319667  [003] d... 59286.633084: bpf_trace_printk: cudaFreeEntr. devPtr: 0000000048753162, devPtr to: 0
+python-319667  [003] d... 59286.633373: bpf_trace_printk: cudaFreeExit. devPtr: 00000000fb5898d0, devPtr to: 0
+python-319667  [003] d... 59286.633383: bpf_trace_printk: cudaFreeEntr. devPtr: 00000000781e492b, devPtr to: 0
+python-319667  [003] d... 59286.634475: bpf_trace_printk: cudaFreeExit. devPtr: 00000000fb5898d0, devPtr to: 0
+python-319667  [004] d... 59288.737401: bpf_trace_printk: cudaGetLastError Exited. Return code: 0
+
+python-319667  [004] d... 59288.737417: bpf_trace_printk: cudaStreamIsCapturing entered.
+python-319667  [004] d... 59288.737440: bpf_trace_printk: cudaMallocEntry timeStart:59289160923123. devPtr:000000001b3853da, size:52428800
+python-319667  [004] d... 59288.737441: bpf_trace_printk: cudaMallocEntry timeStart:59289160923123. devPtr value:0
+python-319667  [004] d... 59288.737717: bpf_trace_printk: cudaMallocExited. devPtr:0000000000000000, size:2130471624, value:0
+python-319667  [004] d... 59288.737783: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:0000000048753162, src_address:00000000d24872de, bytes_alloc:51200000
+python-319667  [004] d... 59288.747052: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [004] d... 59288.748351: bpf_trace_printk: cudaGetLastError Exited. Return code: 0
+
+python-319667  [004] d... 59288.748364: bpf_trace_printk: cudaStreamIsCapturing entered.
+python-319667  [004] d... 59288.748376: bpf_trace_printk: cudaMallocEntry timeStart:59289171866385. devPtr:000000000da8ab4e, size:2097152
+python-319667  [004] d... 59288.748381: bpf_trace_printk: cudaMallocEntry timeStart:59289171866385. devPtr value:0
+python-319667  [004] d... 59288.748632: bpf_trace_printk: cudaMallocExited. devPtr:0000000000000000, size:2130469608, value:0
+python-319667  [004] d... 59288.748682: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:00000000781e492b, src_address:00000000a0baf499, bytes_alloc:200000
+python-319667  [004] d... 59288.748745: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [004] d... 59288.748895: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:00000000f059bf5f, src_address:0000000063bdb44a, bytes_alloc:20
+python-319667  [004] d... 59288.748908: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [004] d... 59288.748992: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:000000008f7fbd11, src_address:000000003a38d8e0, bytes_alloc:40
+python-319667  [004] d... 59288.749001: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [004] d... 59288.749065: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:0000000069dd8840, src_address:000000001d566b16, bytes_alloc:8
+python-319667  [004] d... 59288.749073: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [004] d... 59288.749392: bpf_trace_printk: cudaLaunchKernelEntry. func: 4800000088ec8148.
+python-319667  [004] d... 59288.749395: bpf_trace_printk: cudaLaunchKernelEntry. gridDim: (0, 0, 0).
+python-319667  [004] d... 59288.749396: bpf_trace_printk: cudaLaunchKernelEntry. blockDim: (0, 0, 0).
+python-319667  [004] d... 59288.749397: bpf_trace_printk: cudaLaunchKernelEntry. sharedMem: 1, stream: ffffb693013cfd50.
+python-319667  [004] d... 59288.749410: bpf_trace_printk: cudaLaunchKernelExited. func: 1.
+python-319667  [004] d... 59288.749410: bpf_trace_printk: cudaLaunchKernelExited. gridDim: (0, 0, 0).
+python-319667  [004] d... 59288.749411: bpf_trace_printk: cudaLaunchKernelExited. blockDim: (0, 0, 0).
+python-319667  [004] d... 59288.749412: bpf_trace_printk: cudaLaunchKernelExited. sharedMem: 96440320, stream: ffffb693013cfd78.
+python-319667  [004] d... 59288.749420: bpf_trace_printk: cudaGetLastError Exited. Return code: 0
+
+python-319667  [006] d... 59290.750959: bpf_trace_printk: cudaFreeEntr. devPtr: 0000000048753162, devPtr to: 0
+python-319667  [006] d... 59290.751245: bpf_trace_printk: cudaFreeExit. devPtr: 00000000fb5898d0, devPtr to: 0
+python-319667  [006] d... 59290.751254: bpf_trace_printk: cudaFreeEntr. devPtr: 00000000781e492b, devPtr to: 0
+python-319667  [006] d... 59290.752336: bpf_trace_printk: cudaFreeExit. devPtr: 00000000fb5898d0, devPtr to: 0
+python-319667  [006] d... 59292.855799: bpf_trace_printk: cudaGetLastError Exited. Return code: 0
+
+python-319667  [006] d... 59292.855822: bpf_trace_printk: cudaStreamIsCapturing entered.
+python-319667  [006] d... 59292.855838: bpf_trace_printk: cudaMallocEntry timeStart:59293279357345. devPtr:000000001b3853da, size:52428800
+python-319667  [006] d... 59292.855838: bpf_trace_printk: cudaMallocEntry timeStart:59293279357345. devPtr value:0
+python-319667  [006] d... 59292.856125: bpf_trace_printk: cudaMallocExited. devPtr:0000000000000000, size:2130471624, value:0
+python-319667  [006] d... 59292.856197: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:0000000048753162, src_address:00000000d24872de, bytes_alloc:51200000
+python-319667  [006] d... 59292.865350: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [006] d... 59292.866637: bpf_trace_printk: cudaGetLastError Exited. Return code: 0
+
+python-319667  [006] d... 59292.866650: bpf_trace_printk: cudaStreamIsCapturing entered.
+python-319667  [006] d... 59292.866664: bpf_trace_printk: cudaMallocEntry timeStart:59293290182836. devPtr:000000000da8ab4e, size:2097152
+python-319667  [006] d... 59292.866666: bpf_trace_printk: cudaMallocEntry timeStart:59293290182836. devPtr value:0
+python-319667  [006] d... 59292.866929: bpf_trace_printk: cudaMallocExited. devPtr:0000000000000000, size:2130469608, value:0
+python-319667  [006] d... 59292.866985: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:00000000781e492b, src_address:00000000a0baf499, bytes_alloc:200000
+python-319667  [006] d... 59292.867049: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [006] d... 59292.867200: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:00000000f059bf5f, src_address:000000009a6b807f, bytes_alloc:20
+python-319667  [006] d... 59292.867212: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [006] d... 59292.867305: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:000000008f7fbd11, src_address:00000000281807d6, bytes_alloc:40
+python-319667  [006] d... 59292.867314: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [006] d... 59292.867384: bpf_trace_printk: cudaMemcpyAsyncEntry entered. dst_address:0000000069dd8840, src_address:000000003a38d8e0, bytes_alloc:8
+python-319667  [006] d... 59292.867392: bpf_trace_printk: cudaStreamSynchronize entered.
+python-319667  [006] d... 59292.867724: bpf_trace_printk: cudaLaunchKernelEntry. func: 4800000088ec8148.
+python-319667  [006] d... 59292.867727: bpf_trace_printk: cudaLaunchKernelEntry. gridDim: (0, 0, 0).
+python-319667  [006] d... 59292.867727: bpf_trace_printk: cudaLaunchKernelEntry. blockDim: (0, 0, 0).
+python-319667  [006] d... 59292.867728: bpf_trace_printk: cudaLaunchKernelEntry. sharedMem: 1, stream: ffffb693013cfd50.
+python-319667  [006] d... 59292.867740: bpf_trace_printk: cudaLaunchKernelExited. func: 1.
+python-319667  [006] d... 59292.867742: bpf_trace_printk: cudaLaunchKernelExited. gridDim: (0, 0, 0).
+python-319667  [006] d... 59292.867743: bpf_trace_printk: cudaLaunchKernelExited. blockDim: (0, 0, 0).
+python-319667  [006] d... 59292.867744: bpf_trace_printk: cudaLaunchKernelExited. sharedMem: 96440320, stream: ffffb693013cfd78.
+python-319667  [006] d... 59292.867753: bpf_trace_printk: cudaGetLastError Exited. Return code: 0
+
+python-319667  [006] d... 59294.869925: bpf_trace_printk: cudaFreeEntr. devPtr: 0000000048753162, devPtr to: 0
+python-319667  [006] d... 59294.870204: bpf_trace_printk: cudaFreeExit. devPtr: 00000000fb5898d0, devPtr to: 0
+python-319667  [006] d... 59294.870212: bpf_trace_printk: cudaFreeEntr. devPtr: 00000000781e492b, devPtr to: 0
