@@ -49,8 +49,8 @@ while True:
     del output
     del model
     torch.cuda.empty_cache()
-    time.sleep(2)
-    break
+    time.sleep(5)
+    # break
     
     # torch.cuda.empty_cache()
     # time.sleep(3)

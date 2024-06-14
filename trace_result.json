@@ -1,0 +1,30 @@
+{
+    "traceEvents": [
+        {
+            "pid": 1234,
+            "tid": 5678,
+            "ts": 1234567890,
+            "ph": "B",
+            "cat": "category",
+            "name": "eventName",
+            "args": {
+                "key": "value"
+            }
+        },
+        {
+            "pid": 1234,
+            "tid": 5678,
+            "ts": 1234567891,
+            "ph": "E",
+            "cat": "category",
+            "name": "eventName",
+            "args": {
+                "key": "value"
+            }
+        }
+    ],
+    "metadata": {
+        "trace-config": "config string",
+        "user-agent": "Chrome/91.0.4472.77"
+    }
+}
