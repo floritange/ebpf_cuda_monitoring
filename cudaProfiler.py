@@ -3,10 +3,9 @@
 from __future__ import print_function
 from bcc import BPF
 from time import sleep
-import psutil
 import ctypes
 import time
-
+import atexit
 
 libcuda_list = [
     "/lib64/libcuda.so.1",
@@ -20,19 +19,19 @@ b = BPF(text=cfile_content)
 
 uprobe_mapping = {
     "cuMemAlloc_v2": "cuMemAlloc_v2Entry",
-    # "cuLaunchKernel": "cuLaunchKernelEntry",
-    # "cuMemFree_v2": "cuMemFree_v2Entry",
-    # "cuMemcpyHtoDAsync_v2": "cuMemcpyHtoDAsync_v2Entry",
-    # "cuMemcpyDtoHAsync_v2": "cuMemcpyDtoHAsync_v2Entry",
-    # "cuStreamSynchronize": "cuStreamSynchronizeEntry",
+    "cuLaunchKernel": "cuLaunchKernelEntry",
+    "cuMemFree_v2": "cuMemFree_v2Entry",
+    "cuMemcpyHtoDAsync_v2": "cuMemcpyHtoDAsync_v2Entry",
+    "cuMemcpyDtoHAsync_v2": "cuMemcpyDtoHAsync_v2Entry",
+    "cuStreamSynchronize": "cuStreamSynchronizeEntry",
 }
 uretprobe_mapping = {
     "cuMemAlloc_v2": "cuMemAlloc_v2Exited",
-    # "cuLaunchKernel": "cuLaunchKernelExited",
-    # "cuMemFree_v2": "cuMemFree_v2Exited",
-    # "cuMemcpyHtoDAsync_v2": "cuMemcpyHtoDAsync_v2Exited",
-    # "cuMemcpyDtoHAsync_v2": "cuMemcpyDtoHAsync_v2Exited",
-    # "cuStreamSynchronize": "cuStreamSynchronizeExited",
+    "cuLaunchKernel": "cuLaunchKernelExited",
+    "cuMemFree_v2": "cuMemFree_v2Exited",
+    "cuMemcpyHtoDAsync_v2": "cuMemcpyHtoDAsync_v2Exited",
+    "cuMemcpyDtoHAsync_v2": "cuMemcpyDtoHAsync_v2Exited",
+    "cuStreamSynchronize": "cuStreamSynchronizeExited",
 }
 
 
@@ -54,8 +53,11 @@ for libcudart_path in libcuda_list:
 
 
 print("Tracing cuda... Hit Ctrl-C to end.")
+logfile = open("./logfile.txt", "a")
+atexit.register(logfile.close)
 
 
+######### cuMemAlloc_v2 #########
 class CuMemAlloc_v2Data(ctypes.Structure):
     _fields_ = [
         ("pid", ctypes.c_uint),
@@ -71,13 +73,148 @@ class CuMemAlloc_v2Data(ctypes.Structure):
 # 回调函数
 def print_cuMemAlloc_v2_event(cpu, data, size):
     event = ctypes.cast(data, ctypes.POINTER(CuMemAlloc_v2Data)).contents
-    print(
-        f"[cuMemAlloc_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, devPtr: {hex(event.devPtr)}, size: {event.size}"
-    )
+    log_info = f"[cuMemAlloc_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, devPtr: {hex(event.devPtr)}, size: {event.size}\n"
+    logfile.write(log_info)
 
 
 # 设置ring buffer回调
 b["cuMemAlloc_v2_events"].open_ring_buffer(print_cuMemAlloc_v2_event)
+
+
+######### cuLaunchKernel #########
+class CuLaunchKernelData(ctypes.Structure):
+    _fields_ = [
+        ("pid", ctypes.c_uint),
+        ("tid", ctypes.c_uint),
+        ("time_start", ctypes.c_ulonglong),
+        ("time_end", ctypes.c_ulonglong),
+        ("f", ctypes.c_ulonglong),
+        ("gridDimX", ctypes.c_uint),
+        ("gridDimY", ctypes.c_uint),
+        ("gridDimZ", ctypes.c_uint),
+        ("blockDimX", ctypes.c_uint),
+        ("blockDimY", ctypes.c_uint),
+        ("blockDimZ", ctypes.c_uint),
+        ("sharedMemBytes", ctypes.c_uint),
+        ("hStream", ctypes.c_ulonglong),
+        ("kernelParams", ctypes.c_ulonglong),
+        ("extra", ctypes.c_ulonglong),
+    ]
+
+
+def print_cuLaunchKernel_event(cpu, data, size):
+    event = ctypes.cast(data, ctypes.POINTER(CuLaunchKernelData)).contents
+    log_info = (
+        f"[cuLaunchKernel] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
+        f"f: {hex(event.f)}, gridDimX: {event.gridDimX}, gridDimY: {event.gridDimY}, gridDimZ: {event.gridDimZ}, "
+        f"blockDimX: {event.blockDimX}, blockDimY: {event.blockDimY}, blockDimZ: {event.blockDimZ}, "
+        f"sharedMemBytes: {event.sharedMemBytes}, hStream: {event.hStream}, "
+        f"kernelParams: {hex(event.kernelParams)}, extra: {hex(event.extra)}\n"
+    )
+    logfile.write(log_info)
+
+
+b["cuLaunchKernel_events"].open_ring_buffer(print_cuLaunchKernel_event)
+
+
+######### cuMemFree_v2 #########
+class CuMemFree_v2Data(ctypes.Structure):
+    _fields_ = [
+        ("pid", ctypes.c_uint),
+        ("tid", ctypes.c_uint),
+        ("time_start", ctypes.c_ulonglong),
+        ("time_end", ctypes.c_ulonglong),
+        ("devPtr", ctypes.c_void_p),
+    ]
+
+
+def print_cuMemFree_v2_event(cpu, data, size):
+    event = ctypes.cast(data, ctypes.POINTER(CuMemFree_v2Data)).contents
+    log_info = (
+        f"[cuMemFree_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
+        f"devPtr: {hex(event.devPtr)}\n"
+    )
+    logfile.write(log_info)
+
+
+# 设置 ring buffer 回调
+b["cuMemFree_v2_events"].open_ring_buffer(print_cuMemFree_v2_event)
+
+
+######### cuMemcpyHtoDAsync_v2 #########
+class CuMemcpyHtoDAsync_v2Data(ctypes.Structure):
+    _fields_ = [
+        ("pid", ctypes.c_uint),
+        ("tid", ctypes.c_uint),
+        ("time_start", ctypes.c_ulonglong),
+        ("time_end", ctypes.c_ulonglong),
+        ("dstDevice", ctypes.c_void_p),
+        ("srcHost", ctypes.c_void_p),
+        ("ByteCount", ctypes.c_size_t),
+        ("hStream", ctypes.c_ulonglong),
+    ]
+
+
+def print_cuMemcpyHtoDAsync_v2_event(cpu, data, size):
+    event = ctypes.cast(data, ctypes.POINTER(CuMemcpyHtoDAsync_v2Data)).contents
+    log_info = (
+        f"[cuMemcpyHtoDAsync_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
+        f"dstDevice: {hex(event.dstDevice)}, srcHost: {hex(event.srcHost)}, ByteCount: {event.ByteCount}, hStream: {event.hStream}\n"
+    )
+    logfile.write(log_info)
+
+
+b["cuMemcpyHtoDAsync_v2_events"].open_ring_buffer(print_cuMemcpyHtoDAsync_v2_event)
+
+
+######### cuMemcpyDtoHAsync_v2 #########
+class CuMemcpyDtoHAsync_v2Data(ctypes.Structure):
+    _fields_ = [
+        ("pid", ctypes.c_uint),
+        ("tid", ctypes.c_uint),
+        ("time_start", ctypes.c_ulonglong),
+        ("time_end", ctypes.c_ulonglong),
+        ("dstHost", ctypes.c_void_p),
+        ("srcDevice", ctypes.c_void_p),
+        ("ByteCount", ctypes.c_size_t),
+        ("hStream", ctypes.c_ulonglong),
+    ]
+
+
+def print_cuMemcpyDtoHAsync_v2_event(cpu, data, size):
+    event = ctypes.cast(data, ctypes.POINTER(CuMemcpyDtoHAsync_v2Data)).contents
+    log_info = (
+        f"[cuMemcpyDtoHAsync_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
+        f"dstHost: {hex(event.dstHost)}, srcDevice: {hex(event.srcDevice)}, ByteCount: {event.ByteCount}, hStream: {event.hStream}\n"
+    )
+    logfile.write(log_info)
+
+
+b["cuMemcpyDtoHAsync_v2_events"].open_ring_buffer(print_cuMemcpyDtoHAsync_v2_event)
+
+
+######### cuStreamSynchronize #########
+class CuStreamSynchronizeData(ctypes.Structure):
+    _fields_ = [
+        ("pid", ctypes.c_uint),
+        ("tid", ctypes.c_uint),
+        ("time_start", ctypes.c_ulonglong),
+        ("time_end", ctypes.c_ulonglong),
+        ("hStream", ctypes.c_ulonglong),
+    ]
+
+
+def print_cuStreamSynchronize_event(cpu, data, size):
+    event = ctypes.cast(data, ctypes.POINTER(CuStreamSynchronizeData)).contents
+    log_info = (
+        f"[cuStreamSynchronize] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
+        f"hStream: {event.hStream}\n"
+    )
+    logfile.write(log_info)
+
+
+b["cuStreamSynchronize_events"].open_ring_buffer(print_cuStreamSynchronize_event)
+
 
 try:
     while True:

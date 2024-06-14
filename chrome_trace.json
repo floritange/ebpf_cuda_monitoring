@@ -1,0 +1,430 @@
+{
+    "traceEvents": [
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984071024.292,
+            "ph": "X",
+            "name": "cuMemAlloc_v2",
+            "dur": 177.625,
+            "args": {
+                "devPtr": "0x7f48ce000000",
+                "size": 52428800
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082172.308,
+            "ph": "X",
+            "name": "cuMemAlloc_v2",
+            "dur": 166.167,
+            "args": {
+                "devPtr": "0x7f48d1200000",
+                "size": 2097152
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984104700.897,
+            "ph": "X",
+            "name": "cuMemAlloc_v2",
+            "dur": 111.269,
+            "args": {
+                "devPtr": "0x7f48d1600000",
+                "size": 1024
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984104830.753,
+            "ph": "X",
+            "name": "cuMemAlloc_v2",
+            "dur": 12.153,
+            "args": {
+                "devPtr": "0x7f48d1600400",
+                "size": 131072
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984104853.062,
+            "ph": "X",
+            "name": "cuMemAlloc_v2",
+            "dur": 100.217,
+            "args": {
+                "devPtr": "0x7f48d1800000",
+                "size": 8388608
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984105044.906,
+            "ph": "X",
+            "name": "cuMemAlloc_v2",
+            "dur": 116.015,
+            "args": {
+                "devPtr": "0x7f48ee000000",
+                "size": 20971520
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984071314.285,
+            "ph": "X",
+            "name": "cuMemcpyHtoDAsync_v2",
+            "dur": 9256.322,
+            "args": {
+                "dstDevice": "0x7f48ce000000",
+                "srcHost": "0x7f48ecf2b040",
+                "ByteCount": 51200000,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082368.824,
+            "ph": "X",
+            "name": "cuMemcpyHtoDAsync_v2",
+            "dur": 54.036,
+            "args": {
+                "dstDevice": "0x7f48d1200000",
+                "srcHost": "0x7224380",
+                "ByteCount": 200000,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082566.806,
+            "ph": "X",
+            "name": "cuMemcpyHtoDAsync_v2",
+            "dur": 14.774,
+            "args": {
+                "dstDevice": "0x7f48d1230e00",
+                "srcHost": "0x6aa7600",
+                "ByteCount": 20,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082636.663,
+            "ph": "X",
+            "name": "cuMemcpyHtoDAsync_v2",
+            "dur": 11.198,
+            "args": {
+                "dstDevice": "0x7f48d1231000",
+                "srcHost": "0x6de91c0",
+                "ByteCount": 40,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082680.837,
+            "ph": "X",
+            "name": "cuMemcpyHtoDAsync_v2",
+            "dur": 10.247,
+            "args": {
+                "dstDevice": "0x7f48d1231200",
+                "srcHost": "0x6de9340",
+                "ByteCount": 8,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984080583.607,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 66.78,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082427.96,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 21.009,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082584.977,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 9.918,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082650.985,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 8.749,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984082694.05,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 8.237,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984114720.505,
+            "ph": "X",
+            "name": "cuLaunchKernel",
+            "dur": 35.958,
+            "args": {
+                "f": "0x7b76510",
+                "hStream": "0x0",
+                "kernelParams": "0x7fffc49567d0",
+                "extra": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984124278.983,
+            "ph": "X",
+            "name": "cuLaunchKernel",
+            "dur": 25.798,
+            "args": {
+                "f": "0x8631120",
+                "hStream": "0x0",
+                "kernelParams": "0x7fffc4956990",
+                "extra": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984146620.628,
+            "ph": "X",
+            "name": "cuLaunchKernel",
+            "dur": 27.105,
+            "args": {
+                "f": "0x8c2b8d0",
+                "hStream": "0x0",
+                "kernelParams": "0x7fffc495a790",
+                "extra": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671984146958.727,
+            "ph": "X",
+            "name": "cuLaunchKernel",
+            "dur": 19.137,
+            "args": {
+                "f": "0x7b33310",
+                "hStream": "0x0",
+                "kernelParams": "0x7fffc49567d0",
+                "extra": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986149281.908,
+            "ph": "X",
+            "name": "cuMemcpyDtoHAsync_v2",
+            "dur": 25857.463,
+            "args": {
+                "dstHost": "0x7f48def2b040",
+                "srcDevice": "0x7f48ce000000",
+                "ByteCount": 51200000,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986175580.374,
+            "ph": "X",
+            "name": "cuMemcpyDtoHAsync_v2",
+            "dur": 295.57,
+            "args": {
+                "dstHost": "0x93d2100",
+                "srcDevice": "0x7f48d1200000",
+                "ByteCount": 200000,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986175959.648,
+            "ph": "X",
+            "name": "cuMemcpyDtoHAsync_v2",
+            "dur": 22.517,
+            "args": {
+                "dstHost": "0x9402ec0",
+                "srcDevice": "0x7f48d1230e00",
+                "ByteCount": 20,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176035.092,
+            "ph": "X",
+            "name": "cuMemcpyDtoHAsync_v2",
+            "dur": 17.632,
+            "args": {
+                "dstHost": "0x9403000",
+                "srcDevice": "0x7f48d1231000",
+                "ByteCount": 40,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176084.064,
+            "ph": "X",
+            "name": "cuMemcpyDtoHAsync_v2",
+            "dur": 16.1,
+            "args": {
+                "dstHost": "0x94030c0",
+                "srcDevice": "0x7f48d1231200",
+                "ByteCount": 8,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176145.746,
+            "ph": "X",
+            "name": "cuMemcpyDtoHAsync_v2",
+            "dur": 24.662,
+            "args": {
+                "dstHost": "0x9403180",
+                "srcDevice": "0x7f48d1231400",
+                "ByteCount": 10240,
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986175159.899,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 22.29,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986175882.276,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 10.951,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986175985.276,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 9.224,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176055.941,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 8.799,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176103.166,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 8.492,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176173.282,
+            "ph": "X",
+            "name": "cuStreamSynchronize",
+            "dur": 8.518,
+            "args": {
+                "hStream": "0x0"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176248.861,
+            "ph": "X",
+            "name": "cuMemFree_v2",
+            "dur": 320.078,
+            "args": {
+                "devPtr": "0x7f48ce000000"
+            }
+        },
+        {
+            "pid": 1182515,
+            "tid": 1182515,
+            "ts": 5671986176576.415,
+            "ph": "X",
+            "name": "cuMemFree_v2",
+            "dur": 1086.03,
+            "args": {
+                "devPtr": "0x7f48d1200000"
+            }
+        }
+    ],
+    "displayTimeUnit": "ns"
+}

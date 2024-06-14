@@ -18,6 +18,7 @@ input_dim = data_dim
 hidden_dim = 5
 output_dim = 2
 
+
 # 定义一个简单的神经网络模型并将其转移到CUDA上
 class SimpleNN(nn.Module):
     def __init__(self):
@@ -29,6 +30,7 @@ class SimpleNN(nn.Module):
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return x
+
 
 while True:
     # 生成随机输入数据（示例中使用随机数据代替真实数据）
@@ -44,14 +46,17 @@ while True:
     out_time = datetime.datetime.fromtimestamp(time.time()).strftime("%H:%M:%S")
     print(f"time: {out_time}, output: {len(output)}")
     time.sleep(2)
+    input_data.to("cpu")
+    model.to("cpu")
+    output.to("cpu")
     # 释放GPU资源
     del input_data
     del output
     del model
     torch.cuda.empty_cache()
     time.sleep(5)
-    # break
-    
+    break
+
     # torch.cuda.empty_cache()
     # time.sleep(3)
     # # 生成随机输入数据（示例中使用随机数据代替真实数据）
@@ -72,4 +77,3 @@ while True:
     # torch.cuda.empty_cache()
     # time.sleep(3)
     # break
-

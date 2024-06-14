@@ -1,0 +1,34 @@
+[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984071024292, time_end: 5671984071201917, devPtr: 0x7f48ce000000, size: 52428800
+[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984082172308, time_end: 5671984082338475, devPtr: 0x7f48d1200000, size: 2097152
+[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984104700897, time_end: 5671984104812166, devPtr: 0x7f48d1600000, size: 1024
+[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984104830753, time_end: 5671984104842906, devPtr: 0x7f48d1600400, size: 131072
+[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984104853062, time_end: 5671984104953279, devPtr: 0x7f48d1800000, size: 8388608
+[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984105044906, time_end: 5671984105160921, devPtr: 0x7f48ee000000, size: 20971520
+[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984071314285, time_end: 5671984080570607, dstDevice: 0x7f48ce000000, srcHost: 0x7f48ecf2b040, ByteCount: 51200000, hStream: 0
+[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082368824, time_end: 5671984082422860, dstDevice: 0x7f48d1200000, srcHost: 0x7224380, ByteCount: 200000, hStream: 0
+[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082566806, time_end: 5671984082581580, dstDevice: 0x7f48d1230e00, srcHost: 0x6aa7600, ByteCount: 20, hStream: 0
+[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082636663, time_end: 5671984082647861, dstDevice: 0x7f48d1231000, srcHost: 0x6de91c0, ByteCount: 40, hStream: 0
+[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082680837, time_end: 5671984082691084, dstDevice: 0x7f48d1231200, srcHost: 0x6de9340, ByteCount: 8, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984080583607, time_end: 5671984080650387, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082427960, time_end: 5671984082448969, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082584977, time_end: 5671984082594895, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082650985, time_end: 5671984082659734, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082694050, time_end: 5671984082702287, hStream: 0
+[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984114720505, time_end: 5671984114756463, f: 0x7b76510, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc49567d0, extra: 0x0
+[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984124278983, time_end: 5671984124304781, f: 0x8631120, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc4956990, extra: 0x0
+[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984146620628, time_end: 5671984146647733, f: 0x8c2b8d0, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc495a790, extra: 0x0
+[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984146958727, time_end: 5671984146977864, f: 0x7b33310, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc49567d0, extra: 0x0
+[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986149281908, time_end: 5671986175139371, dstHost: 0x7f48def2b040, srcDevice: 0x7f48ce000000, ByteCount: 51200000, hStream: 0
+[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986175580374, time_end: 5671986175875944, dstHost: 0x93d2100, srcDevice: 0x7f48d1200000, ByteCount: 200000, hStream: 0
+[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986175959648, time_end: 5671986175982165, dstHost: 0x9402ec0, srcDevice: 0x7f48d1230e00, ByteCount: 20, hStream: 0
+[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986176035092, time_end: 5671986176052724, dstHost: 0x9403000, srcDevice: 0x7f48d1231000, ByteCount: 40, hStream: 0
+[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986176084064, time_end: 5671986176100164, dstHost: 0x94030c0, srcDevice: 0x7f48d1231200, ByteCount: 8, hStream: 0
+[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986176145746, time_end: 5671986176170408, dstHost: 0x9403180, srcDevice: 0x7f48d1231400, ByteCount: 10240, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986175159899, time_end: 5671986175182189, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986175882276, time_end: 5671986175893227, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986175985276, time_end: 5671986175994500, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986176055941, time_end: 5671986176064740, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986176103166, time_end: 5671986176111658, hStream: 0
+[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986176173282, time_end: 5671986176181800, hStream: 0
+[cuMemFree_v2] pid: 1182515, tid: 1182515, time_start: 5671986176248861, time_end: 5671986176568939, devPtr: 0x7f48ce000000
+[cuMemFree_v2] pid: 1182515, tid: 1182515, time_start: 5671986176576415, time_end: 5671986177662445, devPtr: 0x7f48d1200000
