@@ -148,6 +148,9 @@ int cuMemFree_v2Exited(struct pt_regs *ctx) {
             return 0;
         *cuMemFree_v2Log = *cuMemFree_v2Log_ptr;
         cuMemFree_v2Log->time_end = bpf_ktime_get_ns();
+        if (!cuMemFree_v2Log->devPtr) {
+            cuMemFree_v2Log->devPtr = (void *)PT_REGS_PARM1(ctx);
+        }
         cuMemFree_v2_events.ringbuf_submit(cuMemFree_v2Log, 0);
     } else {
         bpf_trace_printk("cuMemFree_v2Exit: Not found cuMemFree_v2Log");

@@ -46,16 +46,15 @@ while True:
     out_time = datetime.datetime.fromtimestamp(time.time()).strftime("%H:%M:%S")
     print(f"time: {out_time}, output: {len(output)}")
     time.sleep(2)
-    input_data.to("cpu")
-    model.to("cpu")
-    output.to("cpu")
+    # input_data.to("cpu")
+    # model.to("cpu")
+    # output.to("cpu")
     # 释放GPU资源
     del input_data
     del output
     del model
     torch.cuda.empty_cache()
-    time.sleep(5)
-    break
+    time.sleep(3)
 
     # torch.cuda.empty_cache()
     # time.sleep(3)

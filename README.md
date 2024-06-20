@@ -8,3 +8,5 @@ python tracing_format.py
 ```
 可视化图片
 ![example](./chrome_trace.png)
+trace_memory
+![example](./trace_mem.png)

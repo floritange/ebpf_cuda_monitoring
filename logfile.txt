@@ -1,34 +1,144 @@
-[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984071024292, time_end: 5671984071201917, devPtr: 0x7f48ce000000, size: 52428800
-[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984082172308, time_end: 5671984082338475, devPtr: 0x7f48d1200000, size: 2097152
-[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984104700897, time_end: 5671984104812166, devPtr: 0x7f48d1600000, size: 1024
-[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984104830753, time_end: 5671984104842906, devPtr: 0x7f48d1600400, size: 131072
-[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984104853062, time_end: 5671984104953279, devPtr: 0x7f48d1800000, size: 8388608
-[cuMemAlloc_v2] pid: 1182515, tid: 1182515, time_start: 5671984105044906, time_end: 5671984105160921, devPtr: 0x7f48ee000000, size: 20971520
-[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984071314285, time_end: 5671984080570607, dstDevice: 0x7f48ce000000, srcHost: 0x7f48ecf2b040, ByteCount: 51200000, hStream: 0
-[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082368824, time_end: 5671984082422860, dstDevice: 0x7f48d1200000, srcHost: 0x7224380, ByteCount: 200000, hStream: 0
-[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082566806, time_end: 5671984082581580, dstDevice: 0x7f48d1230e00, srcHost: 0x6aa7600, ByteCount: 20, hStream: 0
-[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082636663, time_end: 5671984082647861, dstDevice: 0x7f48d1231000, srcHost: 0x6de91c0, ByteCount: 40, hStream: 0
-[cuMemcpyHtoDAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671984082680837, time_end: 5671984082691084, dstDevice: 0x7f48d1231200, srcHost: 0x6de9340, ByteCount: 8, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984080583607, time_end: 5671984080650387, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082427960, time_end: 5671984082448969, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082584977, time_end: 5671984082594895, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082650985, time_end: 5671984082659734, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671984082694050, time_end: 5671984082702287, hStream: 0
-[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984114720505, time_end: 5671984114756463, f: 0x7b76510, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc49567d0, extra: 0x0
-[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984124278983, time_end: 5671984124304781, f: 0x8631120, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc4956990, extra: 0x0
-[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984146620628, time_end: 5671984146647733, f: 0x8c2b8d0, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc495a790, extra: 0x0
-[cuLaunchKernel] pid: 1182515, tid: 1182515, time_start: 5671984146958727, time_end: 5671984146977864, f: 0x7b33310, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fffc49567d0, extra: 0x0
-[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986149281908, time_end: 5671986175139371, dstHost: 0x7f48def2b040, srcDevice: 0x7f48ce000000, ByteCount: 51200000, hStream: 0
-[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986175580374, time_end: 5671986175875944, dstHost: 0x93d2100, srcDevice: 0x7f48d1200000, ByteCount: 200000, hStream: 0
-[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986175959648, time_end: 5671986175982165, dstHost: 0x9402ec0, srcDevice: 0x7f48d1230e00, ByteCount: 20, hStream: 0
-[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986176035092, time_end: 5671986176052724, dstHost: 0x9403000, srcDevice: 0x7f48d1231000, ByteCount: 40, hStream: 0
-[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986176084064, time_end: 5671986176100164, dstHost: 0x94030c0, srcDevice: 0x7f48d1231200, ByteCount: 8, hStream: 0
-[cuMemcpyDtoHAsync_v2] pid: 1182515, tid: 1182515, time_start: 5671986176145746, time_end: 5671986176170408, dstHost: 0x9403180, srcDevice: 0x7f48d1231400, ByteCount: 10240, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986175159899, time_end: 5671986175182189, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986175882276, time_end: 5671986175893227, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986175985276, time_end: 5671986175994500, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986176055941, time_end: 5671986176064740, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986176103166, time_end: 5671986176111658, hStream: 0
-[cuStreamSynchronize] pid: 1182515, tid: 1182515, time_start: 5671986176173282, time_end: 5671986176181800, hStream: 0
-[cuMemFree_v2] pid: 1182515, tid: 1182515, time_start: 5671986176248861, time_end: 5671986176568939, devPtr: 0x7f48ce000000
-[cuMemFree_v2] pid: 1182515, tid: 1182515, time_start: 5671986176576415, time_end: 5671986177662445, devPtr: 0x7f48d1200000
+2024-06-20 15:39:10,933 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163470518322332, time_end: 6163470518687036, devPtr: 0x7f874e000000
+2024-06-20 15:39:11,933 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163470518702295, time_end: 6163470519837770, devPtr: 0x7f874d400000
+2024-06-20 15:39:14,038 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163473624019328, time_end: 6163473624318411, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:15,039 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163473634203986, time_end: 6163473634468362, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:15,039 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163473624392069, time_end: 6163473632928042, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:15,039 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163473634502202, time_end: 6163473634570695, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:15,039 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163473634686761, time_end: 6163473634702641, dstDevice: 0x7f874d430e00, srcHost: 0x77c3d40, ByteCount: 20, hStream: 0
+2024-06-20 15:39:15,040 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163473634755177, time_end: 6163473634766037, dstDevice: 0x7f874d431000, srcHost: 0x77c4280, ByteCount: 40, hStream: 0
+2024-06-20 15:39:15,040 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163473634798331, time_end: 6163473634808597, dstDevice: 0x7f874d431200, srcHost: 0x7a48300, ByteCount: 8, hStream: 0
+2024-06-20 15:39:15,040 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163473632948762, time_end: 6163473633005961, hStream: 0
+2024-06-20 15:39:15,040 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163473634574859, time_end: 6163473634597951, hStream: 0
+2024-06-20 15:39:15,040 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163473634705747, time_end: 6163473634715110, hStream: 0
+2024-06-20 15:39:15,040 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163473634769106, time_end: 6163473634777811, hStream: 0
+2024-06-20 15:39:15,040 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163473634811327, time_end: 6163473634819705, hStream: 0
+2024-06-20 15:39:15,040 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163473634991765, time_end: 6163473635024199, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:15,040 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163473635031659, time_end: 6163473635046664, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:15,040 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163473635090778, time_end: 6163473635105196, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:15,040 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163473635164450, time_end: 6163473635179217, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:16,051 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163475636544658, time_end: 6163475636852763, devPtr: 0x7f874e000000
+2024-06-20 15:39:17,052 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163475636865553, time_end: 6163475637942283, devPtr: 0x7f874d400000
+2024-06-20 15:39:19,156 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163478741555652, time_end: 6163478741872127, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:20,156 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163478751840042, time_end: 6163478752087875, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:20,156 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163478741929475, time_end: 6163478750534957, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:20,156 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163478752121681, time_end: 6163478752189292, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:20,156 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163478752297055, time_end: 6163478752311244, dstDevice: 0x7f874d430e00, srcHost: 0x6f5d580, ByteCount: 20, hStream: 0
+2024-06-20 15:39:20,156 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163478752375822, time_end: 6163478752387432, dstDevice: 0x7f874d431000, srcHost: 0xa0329c0, ByteCount: 40, hStream: 0
+2024-06-20 15:39:20,156 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163478752420348, time_end: 6163478752430145, dstDevice: 0x7f874d431200, srcHost: 0x77c4280, ByteCount: 8, hStream: 0
+2024-06-20 15:39:20,157 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163478750551681, time_end: 6163478750615698, hStream: 0
+2024-06-20 15:39:20,157 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163478752193833, time_end: 6163478752215479, hStream: 0
+2024-06-20 15:39:20,157 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163478752314161, time_end: 6163478752323448, hStream: 0
+2024-06-20 15:39:20,157 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163478752390301, time_end: 6163478752399356, hStream: 0
+2024-06-20 15:39:20,157 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163478752432904, time_end: 6163478752441373, hStream: 0
+2024-06-20 15:39:20,157 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163478752618428, time_end: 6163478752658305, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:20,157 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163478752665671, time_end: 6163478752681178, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:20,157 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163478752729695, time_end: 6163478752742567, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:20,157 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163478752805211, time_end: 6163478752819289, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:21,169 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163480754993591, time_end: 6163480755275135, devPtr: 0x7f874e000000
+2024-06-20 15:39:22,170 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163480755287772, time_end: 6163480756373421, devPtr: 0x7f874d400000
+2024-06-20 15:39:24,276 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163483862134338, time_end: 6163483862447480, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:25,277 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163483872561203, time_end: 6163483872836263, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:25,277 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163483862504317, time_end: 6163483871299990, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:25,277 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163483872873339, time_end: 6163483872943423, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:25,277 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163483873054476, time_end: 6163483873068789, dstDevice: 0x7f874d430e00, srcHost: 0xa032cc0, ByteCount: 20, hStream: 0
+2024-06-20 15:39:25,277 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163483873121147, time_end: 6163483873132105, dstDevice: 0x7f874d431000, srcHost: 0xa0323c0, ByteCount: 40, hStream: 0
+2024-06-20 15:39:25,278 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163483873163078, time_end: 6163483873172941, dstDevice: 0x7f874d431200, srcHost: 0x77c4280, ByteCount: 8, hStream: 0
+2024-06-20 15:39:25,278 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163483871320044, time_end: 6163483871379074, hStream: 0
+2024-06-20 15:39:25,278 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163483872948206, time_end: 6163483872972170, hStream: 0
+2024-06-20 15:39:25,278 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163483873071768, time_end: 6163483873080770, hStream: 0
+2024-06-20 15:39:25,278 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163483873135091, time_end: 6163483873143560, hStream: 0
+2024-06-20 15:39:25,278 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163483873175773, time_end: 6163483873184312, hStream: 0
+2024-06-20 15:39:25,278 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163483873381660, time_end: 6163483873411814, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:25,278 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163483873418578, time_end: 6163483873433091, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:25,278 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163483873480861, time_end: 6163483873494068, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:25,278 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163483873563789, time_end: 6163483873577859, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:26,290 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163485875752086, time_end: 6163485876078239, devPtr: 0x7f874e000000
+2024-06-20 15:39:27,291 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163485876096695, time_end: 6163485877171261, devPtr: 0x7f874d400000
+2024-06-20 15:39:29,428 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163489013528701, time_end: 6163489013841125, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:30,429 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163489024472785, time_end: 6163489024730574, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:30,429 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163489013895327, time_end: 6163489023115968, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:30,429 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163489024762047, time_end: 6163489024827056, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:30,429 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163489024932645, time_end: 6163489024947045, dstDevice: 0x7f874d430e00, srcHost: 0xa032cc0, ByteCount: 20, hStream: 0
+2024-06-20 15:39:30,429 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163489024997452, time_end: 6163489025008465, dstDevice: 0x7f874d431000, srcHost: 0x77c4280, ByteCount: 40, hStream: 0
+2024-06-20 15:39:30,429 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163489025039750, time_end: 6163489025049661, dstDevice: 0x7f874d431200, srcHost: 0x6cfa980, ByteCount: 8, hStream: 0
+2024-06-20 15:39:30,429 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163489023134976, time_end: 6163489023190769, hStream: 0
+2024-06-20 15:39:30,430 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163489024831864, time_end: 6163489024853489, hStream: 0
+2024-06-20 15:39:30,430 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163489024950267, time_end: 6163489024959424, hStream: 0
+2024-06-20 15:39:30,430 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163489025011517, time_end: 6163489025020026, hStream: 0
+2024-06-20 15:39:30,430 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163489025052600, time_end: 6163489025061123, hStream: 0
+2024-06-20 15:39:30,430 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163489025236034, time_end: 6163489025266736, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:30,430 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163489025274041, time_end: 6163489025288516, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:30,430 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163489025345046, time_end: 6163489025358642, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:30,430 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163489025426707, time_end: 6163489025441483, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:31,442 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163491027606000, time_end: 6163491027917945, devPtr: 0x7f874e000000
+2024-06-20 15:39:32,442 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163491027931911, time_end: 6163491029012060, devPtr: 0x7f874d400000
+2024-06-20 15:39:34,547 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163494133083158, time_end: 6163494133398590, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:35,548 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163494143432112, time_end: 6163494143710263, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:35,549 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163494133453279, time_end: 6163494142179348, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:35,549 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163494143745427, time_end: 6163494143814110, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:35,549 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163494143920618, time_end: 6163494143934995, dstDevice: 0x7f874d430e00, srcHost: 0x77c3d40, ByteCount: 20, hStream: 0
+2024-06-20 15:39:35,549 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163494143987348, time_end: 6163494143999083, dstDevice: 0x7f874d431000, srcHost: 0x7a48300, ByteCount: 40, hStream: 0
+2024-06-20 15:39:35,549 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163494144031088, time_end: 6163494144040953, dstDevice: 0x7f874d431200, srcHost: 0xa030d40, ByteCount: 8, hStream: 0
+2024-06-20 15:39:35,549 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163494142199209, time_end: 6163494142260212, hStream: 0
+2024-06-20 15:39:35,549 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163494143818608, time_end: 6163494143841466, hStream: 0
+2024-06-20 15:39:35,549 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163494143937874, time_end: 6163494143947946, hStream: 0
+2024-06-20 15:39:35,549 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163494144002112, time_end: 6163494144010819, hStream: 0
+2024-06-20 15:39:35,549 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163494144043710, time_end: 6163494144052292, hStream: 0
+2024-06-20 15:39:35,549 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163494144228804, time_end: 6163494144262414, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:35,549 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163494144270317, time_end: 6163494144285151, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:35,549 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163494144342014, time_end: 6163494144357170, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:35,549 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163494144424235, time_end: 6163494144437594, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:36,561 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163496146696258, time_end: 6163496146987523, devPtr: 0x7f874e000000
+2024-06-20 15:39:37,562 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163496146999956, time_end: 6163496148087279, devPtr: 0x7f874d400000
+2024-06-20 15:39:39,666 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163499251901522, time_end: 6163499252203432, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:40,667 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163499262058831, time_end: 6163499262292036, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:40,668 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163499252256420, time_end: 6163499260775439, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:40,668 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163499262322747, time_end: 6163499262395848, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:40,668 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163499262504160, time_end: 6163499262518692, dstDevice: 0x7f874d430e00, srcHost: 0x7a47d00, ByteCount: 20, hStream: 0
+2024-06-20 15:39:40,668 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163499262572226, time_end: 6163499262583606, dstDevice: 0x7f874d431000, srcHost: 0x6f5db80, ByteCount: 40, hStream: 0
+2024-06-20 15:39:40,668 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163499262615462, time_end: 6163499262625363, dstDevice: 0x7f874d431200, srcHost: 0x7a48180, ByteCount: 8, hStream: 0
+2024-06-20 15:39:40,668 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163499260789753, time_end: 6163499260857251, hStream: 0
+2024-06-20 15:39:40,668 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163499262400500, time_end: 6163499262422377, hStream: 0
+2024-06-20 15:39:40,668 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163499262521797, time_end: 6163499262530959, hStream: 0
+2024-06-20 15:39:40,668 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163499262586699, time_end: 6163499262595480, hStream: 0
+2024-06-20 15:39:40,668 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163499262628293, time_end: 6163499262645233, hStream: 0
+2024-06-20 15:39:40,668 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163499262825651, time_end: 6163499262855510, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:40,668 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163499262863051, time_end: 6163499262877488, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:40,668 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163499262923009, time_end: 6163499262935917, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:40,668 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163499262996525, time_end: 6163499263010519, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:41,679 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163501265269428, time_end: 6163501265575314, devPtr: 0x7f874e000000
+2024-06-20 15:39:42,680 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163501265589263, time_end: 6163501266678857, devPtr: 0x7f874d400000
+2024-06-20 15:39:44,785 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163504370901678, time_end: 6163504371212196, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:45,786 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163504381313720, time_end: 6163504381601876, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:45,786 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163504371266065, time_end: 6163504380035587, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:45,786 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163504381644999, time_end: 6163504381713856, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:45,786 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163504381827356, time_end: 6163504381841461, dstDevice: 0x7f874d430e00, srcHost: 0xa02bf40, ByteCount: 20, hStream: 0
+2024-06-20 15:39:45,786 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163504381892899, time_end: 6163504381904027, dstDevice: 0x7f874d431000, srcHost: 0x77c4280, ByteCount: 40, hStream: 0
+2024-06-20 15:39:45,786 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163504381935474, time_end: 6163504381945309, dstDevice: 0x7f874d431200, srcHost: 0x6cfa980, ByteCount: 8, hStream: 0
+2024-06-20 15:39:45,787 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163504380054047, time_end: 6163504380116213, hStream: 0
+2024-06-20 15:39:45,787 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163504381718514, time_end: 6163504381740935, hStream: 0
+2024-06-20 15:39:45,787 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163504381844416, time_end: 6163504381853573, hStream: 0
+2024-06-20 15:39:45,787 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163504381907025, time_end: 6163504381915562, hStream: 0
+2024-06-20 15:39:45,787 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163504381948185, time_end: 6163504381956671, hStream: 0
+2024-06-20 15:39:45,787 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163504382133954, time_end: 6163504382164294, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:45,787 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163504382171558, time_end: 6163504382185966, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:45,787 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163504382230320, time_end: 6163504382244009, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:45,787 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163504382305319, time_end: 6163504382319688, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:46,799 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163506384586030, time_end: 6163506384872836, devPtr: 0x7f874e000000
+2024-06-20 15:39:47,800 - [cuMemFree_v2] pid: 3908742, tid: 3908742, time_start: 6163506384885473, time_end: 6163506385966162, devPtr: 0x7f874d400000
+2024-06-20 15:39:49,905 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163509491397564, time_end: 6163509491702312, devPtr: 0x7f874e000000, size: 52428800
+2024-06-20 15:39:50,907 - [cuMemAlloc_v2] pid: 3908742, tid: 3908742, time_start: 6163509501543257, time_end: 6163509501800136, devPtr: 0x7f874d400000, size: 2097152
+2024-06-20 15:39:50,907 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163509491757501, time_end: 6163509500207136, dstDevice: 0x7f874e000000, srcHost: 0x7f875ef2b040, ByteCount: 51200000, hStream: 0
+2024-06-20 15:39:50,907 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163509501832607, time_end: 6163509501901226, dstDevice: 0x7f874d400000, srcHost: 0xa0c2880, ByteCount: 200000, hStream: 0
+2024-06-20 15:39:50,907 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163509502010564, time_end: 6163509502025083, dstDevice: 0x7f874d430e00, srcHost: 0xa0329c0, ByteCount: 20, hStream: 0
+2024-06-20 15:39:50,907 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163509502077946, time_end: 6163509502089614, dstDevice: 0x7f874d431000, srcHost: 0x7d48dc0, ByteCount: 40, hStream: 0
+2024-06-20 15:39:50,907 - [cuMemcpyHtoDAsync_v2] pid: 3908742, tid: 3908742, time_start: 6163509502121239, time_end: 6163509502131645, dstDevice: 0x7f874d431200, srcHost: 0xa02bf40, ByteCount: 8, hStream: 0
+2024-06-20 15:39:50,907 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163509500222570, time_end: 6163509500293198, hStream: 0
+2024-06-20 15:39:50,907 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163509501906548, time_end: 6163509501930625, hStream: 0
+2024-06-20 15:39:50,907 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163509502028034, time_end: 6163509502037562, hStream: 0
+2024-06-20 15:39:50,907 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163509502092432, time_end: 6163509502101134, hStream: 0
+2024-06-20 15:39:50,907 - [cuStreamSynchronize] pid: 3908742, tid: 3908742, time_start: 6163509502134438, time_end: 6163509502143058, hStream: 0
+2024-06-20 15:39:50,907 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163509502314419, time_end: 6163509502361429, f: 0x87d3ca0, gridDimX: 1, gridDimY: 40, gridDimZ: 8, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0
+2024-06-20 15:39:50,907 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163509502368205, time_end: 6163509502383728, f: 0x928e8b0, gridDimX: 1, gridDimY: 80, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d311150, extra: 0x0
+2024-06-20 15:39:50,908 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163509502431712, time_end: 6163509502445538, f: 0x9888d30, gridDimX: 13, gridDimY: 1, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d314f50, extra: 0x0
+2024-06-20 15:39:50,908 - [cuLaunchKernel] pid: 3908742, tid: 3908742, time_start: 6163509502509717, time_end: 6163509502524879, f: 0x8790aa0, gridDimX: 1, gridDimY: 10, gridDimZ: 1, blockDimX: 1, blockDimY: 0, blockDimZ: 0, sharedMemBytes: 0, hStream: 0, kernelParams: 0x7fff5d310f90, extra: 0x0

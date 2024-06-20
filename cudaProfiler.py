@@ -6,7 +6,9 @@ from time import sleep
 import ctypes
 import time
 import atexit
+import logging
 
+logging.basicConfig(filename="./logfile.txt", level=logging.INFO, format="%(asctime)s - %(message)s")
 libcuda_list = [
     "/lib64/libcuda.so.1",
 ]
@@ -52,11 +54,6 @@ for libcudart_path in libcuda_list:
     uprobe_attach_cuda(libcudart_path)
 
 
-print("Tracing cuda... Hit Ctrl-C to end.")
-logfile = open("./logfile.txt", "a")
-atexit.register(logfile.close)
-
-
 ######### cuMemAlloc_v2 #########
 class CuMemAlloc_v2Data(ctypes.Structure):
     _fields_ = [
@@ -73,8 +70,8 @@ class CuMemAlloc_v2Data(ctypes.Structure):
 # 回调函数
 def print_cuMemAlloc_v2_event(cpu, data, size):
     event = ctypes.cast(data, ctypes.POINTER(CuMemAlloc_v2Data)).contents
-    log_info = f"[cuMemAlloc_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, devPtr: {hex(event.devPtr)}, size: {event.size}\n"
-    logfile.write(log_info)
+    log_info = f"[cuMemAlloc_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, devPtr: {hex(event.devPtr)}, size: {event.size}"
+    logging.info(log_info)
 
 
 # 设置ring buffer回调
@@ -104,14 +101,8 @@ class CuLaunchKernelData(ctypes.Structure):
 
 def print_cuLaunchKernel_event(cpu, data, size):
     event = ctypes.cast(data, ctypes.POINTER(CuLaunchKernelData)).contents
-    log_info = (
-        f"[cuLaunchKernel] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
-        f"f: {hex(event.f)}, gridDimX: {event.gridDimX}, gridDimY: {event.gridDimY}, gridDimZ: {event.gridDimZ}, "
-        f"blockDimX: {event.blockDimX}, blockDimY: {event.blockDimY}, blockDimZ: {event.blockDimZ}, "
-        f"sharedMemBytes: {event.sharedMemBytes}, hStream: {event.hStream}, "
-        f"kernelParams: {hex(event.kernelParams)}, extra: {hex(event.extra)}\n"
-    )
-    logfile.write(log_info)
+    log_info = f"[cuLaunchKernel] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, f: {hex(event.f)}, gridDimX: {event.gridDimX}, gridDimY: {event.gridDimY}, gridDimZ: {event.gridDimZ}, blockDimX: {event.blockDimX}, blockDimY: {event.blockDimY}, blockDimZ: {event.blockDimZ}, sharedMemBytes: {event.sharedMemBytes}, hStream: {event.hStream}, kernelParams: {hex(event.kernelParams)}, extra: {hex(event.extra)}"
+    logging.info(log_info)
 
 
 b["cuLaunchKernel_events"].open_ring_buffer(print_cuLaunchKernel_event)
@@ -130,11 +121,9 @@ class CuMemFree_v2Data(ctypes.Structure):
 
 def print_cuMemFree_v2_event(cpu, data, size):
     event = ctypes.cast(data, ctypes.POINTER(CuMemFree_v2Data)).contents
-    log_info = (
-        f"[cuMemFree_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
-        f"devPtr: {hex(event.devPtr)}\n"
-    )
-    logfile.write(log_info)
+    dev_ptr_str = hex(event.devPtr) if event.devPtr else "None"
+    log_info = f"[cuMemFree_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, devPtr: {dev_ptr_str}"
+    logging.info(log_info)
 
 
 # 设置 ring buffer 回调
@@ -157,11 +146,8 @@ class CuMemcpyHtoDAsync_v2Data(ctypes.Structure):
 
 def print_cuMemcpyHtoDAsync_v2_event(cpu, data, size):
     event = ctypes.cast(data, ctypes.POINTER(CuMemcpyHtoDAsync_v2Data)).contents
-    log_info = (
-        f"[cuMemcpyHtoDAsync_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
-        f"dstDevice: {hex(event.dstDevice)}, srcHost: {hex(event.srcHost)}, ByteCount: {event.ByteCount}, hStream: {event.hStream}\n"
-    )
-    logfile.write(log_info)
+    log_info = f"[cuMemcpyHtoDAsync_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, dstDevice: {hex(event.dstDevice)}, srcHost: {hex(event.srcHost)}, ByteCount: {event.ByteCount}, hStream: {event.hStream}"
+    logging.info(log_info)
 
 
 b["cuMemcpyHtoDAsync_v2_events"].open_ring_buffer(print_cuMemcpyHtoDAsync_v2_event)
@@ -183,11 +169,8 @@ class CuMemcpyDtoHAsync_v2Data(ctypes.Structure):
 
 def print_cuMemcpyDtoHAsync_v2_event(cpu, data, size):
     event = ctypes.cast(data, ctypes.POINTER(CuMemcpyDtoHAsync_v2Data)).contents
-    log_info = (
-        f"[cuMemcpyDtoHAsync_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
-        f"dstHost: {hex(event.dstHost)}, srcDevice: {hex(event.srcDevice)}, ByteCount: {event.ByteCount}, hStream: {event.hStream}\n"
-    )
-    logfile.write(log_info)
+    log_info = f"[cuMemcpyDtoHAsync_v2] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, dstHost: {hex(event.dstHost)}, srcDevice: {hex(event.srcDevice)}, ByteCount: {event.ByteCount}, hStream: {event.hStream}"
+    logging.info(log_info)
 
 
 b["cuMemcpyDtoHAsync_v2_events"].open_ring_buffer(print_cuMemcpyDtoHAsync_v2_event)
@@ -206,11 +189,8 @@ class CuStreamSynchronizeData(ctypes.Structure):
 
 def print_cuStreamSynchronize_event(cpu, data, size):
     event = ctypes.cast(data, ctypes.POINTER(CuStreamSynchronizeData)).contents
-    log_info = (
-        f"[cuStreamSynchronize] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, "
-        f"hStream: {event.hStream}\n"
-    )
-    logfile.write(log_info)
+    log_info = f"[cuStreamSynchronize] pid: {event.pid}, tid: {event.tid}, time_start: {event.time_start}, time_end: {event.time_end}, hStream: {event.hStream}"
+    logging.info(log_info)
 
 
 b["cuStreamSynchronize_events"].open_ring_buffer(print_cuStreamSynchronize_event)
