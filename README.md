@@ -14,7 +14,6 @@ python tracing_format.py
 python trace_mem.py
 ```
 
-可视化图片
 ![chrome_trace](./patent/chrome_trace.png)
 trace_memory
 ![trace_mem](./trace_mem.png)
