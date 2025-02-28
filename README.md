@@ -30,7 +30,8 @@ python tracing_format.py
 python trace_mem.py
 ```
 
-# 📚 Reference
+
+# 📚 Cite
 ```bibtex
 @patent{CN202410942419.2,
   author       = {Pengfei Chen, Gou Tan, Yuan Zhong, Chuanfu Zhang, and Zibin Zheng},
