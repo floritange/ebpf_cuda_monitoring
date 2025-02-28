@@ -1,7 +1,7 @@
 # ebpf Profiling CUDA Runtime/Driver libs
 A kernel-level GPU event tracing system uses eBPF to capture CUDA runtime behaviors (memory management, kernel launches, data transfers, synchronization), enabling performance optimization for DNN/LLM training and inference. 
 
-## EN
+#### EN
 ```bash
 #### env #####
 # bcc
@@ -19,7 +19,7 @@ python trace_mem.py
 trace_memory
 ![trace_mem](./trace_mem.png)
 
-## CN
+#### CN
 ```bash
 # bcc环境
 python cudaProfiler.py
@@ -30,12 +30,6 @@ python tracing_format.py
 # 自动处理logfile.txt，定期刷新画图，结果为trace_mem.png
 python trace_mem.py
 ```
-
-可视化图片
-![chrome_trace](./patent/chrome_trace.png)
-trace_memory
-![trace_mem](./trace_mem.png)
-
 
 # 📚 Reference
 ```bibtex
